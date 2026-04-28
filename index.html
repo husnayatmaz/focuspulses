@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusPulse — Biometric Attention Intelligence</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-pulse"></span>
+        FocusPulse
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#companion">AI Companion</a></li>
+        <li><a href="#guardian">Guardian</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">◑</span>
+        </button>
+        <a href="#contact" class="btn btn-nav">Get Early Access</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#features">Features</a>
+      <a href="#companion">AI Companion</a>
+      <a href="#guardian">Guardian</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Biometric · AI · Real-Time
+      </div>
+      <h1 class="hero-headline">
+        Your brain has a<br />
+        <span class="gradient-text">focus signature.</span><br />
+        We read it.
+      </h1>
+      <p class="hero-sub">FocusPulse fuses wearable biosensors with AI-driven intelligence to decode your attention in real time — then acts on it before distraction wins.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">
+          <span>Request Early Access</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#how-it-works" class="btn btn-ghost">See How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">6<span class="stat-unit">min</span></span>
+          <span class="stat-label">avg. focus span</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">65<span class="stat-unit">%</span></span>
+          <span class="stat-label">students distracted</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3<span class="stat-unit">x</span></span>
+          <span class="stat-label">focus improvement</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-delay">
+      <div class="device-mockup">
+        <div class="device-screen">
+          <div class="device-header">
+            <span class="device-dot red"></span>
+            <span class="device-dot yellow"></span>
+            <span class="device-dot green"></span>
+            <span class="device-title">FocusPulse Dashboard</span>
+          </div>
+          <div class="device-body">
+            <div class="focus-ring-wrap">
+              <svg class="focus-ring" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" class="ring-bg" />
+                <circle cx="60" cy="60" r="50" class="ring-fill" id="heroRing" />
+              </svg>
+              <div class="ring-center">
+                <span class="ring-val" id="heroVal">78</span>
+                <span class="ring-lbl">Focus Score</span>
+              </div>
+            </div>
+            <div class="device-metrics">
+              <div class="metric-row">
+                <span class="metric-icon">♡</span>
+                <span class="metric-name">Heart Rate</span>
+                <div class="metric-bar"><div class="metric-fill" style="width:72%"></div></div>
+                <span class="metric-val">72 bpm</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-icon">⚡</span>
+                <span class="metric-name">GSR Level</span>
+                <div class="metric-bar"><div class="metric-fill" style="width:58%"></div></div>
+                <span class="metric-val">0.58 µS</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-icon">◉</span>
+                <span class="metric-name">Motion</span>
+                <div class="metric-bar"><div class="metric-fill" style="width:20%"></div></div>
+                <span class="metric-val">Low</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="device-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM + STATS -->
+  <section id="problem">
+    <div class="container">
+      <div class="section-tag reveal">The Problem</div>
+      <h2 class="section-title reveal">Focus is <span class="gradient-text">broken</span> by design.</h2>
+      <p class="section-sub reveal">Modern environments are engineered for distraction. Students and professionals lose hours daily without ever realizing it.</p>
+      <div class="problem-grid">
+        <div class="problem-card reveal">
+          <div class="problem-icon">⏱</div>
+          <div class="problem-stat">6 min</div>
+          <div class="problem-label">Average focus duration before distraction</div>
+          <div class="problem-desc">The average person can only maintain deep focus for about 6 minutes before their attention drifts — a figure that has only worsened with smartphone use.</div>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon">📉</div>
+          <div class="problem-stat">65%</div>
+          <div class="problem-label">Students report chronic distraction during study</div>
+          <div class="problem-desc">Nearly two-thirds of students say distraction is their number one obstacle to academic performance — yet they have no real-time tool to identify or fix it.</div>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon">🧠</div>
+          <div class="problem-stat">23 min</div>
+          <div class="problem-label">Time to re-enter deep focus after interruption</div>
+          <div class="problem-desc">Once focus is broken, it takes over 23 minutes on average to fully recover. Traditional apps do nothing to prevent this — FocusPulse does.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="container">
+      <div class="section-tag reveal">Process</div>
+      <h2 class="section-title reveal">Three steps to <span class="gradient-text">deep work.</span></h2>
+      <p class="section-sub reveal">From skin to screen — a closed-loop system that monitors, understands, and guides your attention.</p>
+      <div class="steps-wrap">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <div class="step-icon-wrap">
+              <div class="step-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M14 4V2M14 26V24M4 14H2M26 14H24M6.34 6.34L4.93 4.93M23.07 23.07L21.66 21.66M21.66 6.34L23.07 4.93M4.93 23.07L6.34 21.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <h3>Biometric Sensing</h3>
+            <p>ESP32-powered wearable sensors capture galvanic skin response, heart rate variability, and motion — the physiological signals of attention.</p>
+          </div>
+        </div>
+        <div class="step-connector reveal">
+          <div class="connector-line"></div>
+          <div class="connector-dot"></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <div class="step-icon-wrap">
+              <div class="step-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="4" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="16" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M20 16V24M16 20H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <h3>AI Focus Analysis</h3>
+            <p>Our machine learning engine interprets the raw sensor data, classifies your current attention state, and predicts distraction before it peaks.</p>
+          </div>
+        </div>
+        <div class="step-connector reveal">
+          <div class="connector-line"></div>
+          <div class="connector-dot"></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <div class="step-icon-wrap">
+              <div class="step-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M7 14C7 10.13 10.13 7 14 7C17.87 7 21 10.13 21 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M5 17L7 14L9 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 17L21 14L23 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="9" y="17" width="10" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+            </div>
+            <h3>Intelligent Feedback</h3>
+            <p>The mobile app delivers real-time interventions — nudges, break recommendations, and Guardian reactions — timed precisely to your focus curve.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES GRID -->
+  <section id="features">
+    <div class="container">
+      <div class="section-tag reveal">Features</div>
+      <h2 class="section-title reveal">Everything your focus <span class="gradient-text">deserves.</span></h2>
+      <p class="section-sub reveal">A complete ecosystem — from hardware sensing to social accountability to AI coaching.</p>
+      <div class="features-grid">
+        <div class="feature-card card-wide reveal">
+          <div class="feature-card-bg"></div>
+          <div class="feature-icon">📡</div>
+          <h3>Real-Time Focus Tracking</h3>
+          <p>Continuous biometric monitoring via GSR, heart rate, and motion sensors. Know your focus state at every moment — not after the session ends.</p>
+          <div class="feature-tag">Hardware + AI</div>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card-bg"></div>
+          <div class="feature-icon">🤖</div>
+          <h3>AI Study Companion</h3>
+          <p>A conversational AI that combines motivation, behavioral analysis, and productivity coaching — always available, always context-aware.</p>
+          <div class="feature-tag">AI</div>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card-bg"></div>
+          <div class="feature-icon">🌐</div>
+          <h3>Social Study Rooms</h3>
+          <p>Virtual co-working spaces where users study together. Accountability through presence. Real-time focus visibility for the whole group.</p>
+          <div class="feature-tag">Social</div>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card-bg"></div>
+          <div class="feature-icon">🎯</div>
+          <h3>Smart Matching System</h3>
+          <p>Get paired with study partners whose focus patterns complement yours. Work with people who make you more productive, not less.</p>
+          <div class="feature-tag">AI + Social</div>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card-bg"></div>
+          <div class="feature-icon">🏆</div>
+          <h3>Gamification System</h3>
+          <p>Levels, streaks, focus scores, and leaderboards. Turn the intangible work of attention into something you can see, compete with, and celebrate.</p>
+          <div class="feature-tag">Engagement</div>
+        </div>
+        <div class="feature-card card-wide reveal">
+          <div class="feature-card-bg"></div>
+          <div class="feature-icon">👁</div>
+          <h3>Focus Guardian AI</h3>
+          <p>An animated digital entity that lives in your interface, reacting to your focus state in real time. Not a notification — a presence. Choose strict, friendly, or coach mode.</p>
+          <div class="feature-tag">AI Avatar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI COMPANION -->
+  <section id="companion">
+    <div class="container">
+      <div class="companion-grid">
+        <div class="companion-text reveal">
+          <div class="section-tag">AI Study Companion</div>
+          <h2 class="section-title">More than a chatbot.<br /><span class="gradient-text">A cognitive co-pilot.</span></h2>
+          <p>Your AI Study Companion doesn't just respond to commands — it monitors your session, detects behavioral patterns, and intervenes at the right moment with the right message.</p>
+          <ul class="companion-features">
+            <li>
+              <span class="cf-icon">⚡</span>
+              <span><strong>Proactive Intervention</strong> — alerts you before distraction takes hold, not after</span>
+            </li>
+            <li>
+              <span class="cf-icon">📊</span>
+              <span><strong>Session Analytics</strong> — detailed post-session breakdowns of your focus curve</span>
+            </li>
+            <li>
+              <span class="cf-icon">🧘</span>
+              <span><strong>Adaptive Tone</strong> — strict, motivational, or gentle based on your preferences</span>
+            </li>
+          </ul>
+        </div>
+        <div class="companion-chat reveal-delay">
+          <div class="chat-window">
+            <div class="chat-header">
+              <div class="chat-avatar">
+                <span class="chat-avatar-pulse"></span>
+                <span>🤖</span>
+              </div>
+              <div>
+                <div class="chat-name">Focus Companion</div>
+                <div class="chat-status">Active · Monitoring session</div>
+              </div>
+              <div class="chat-indicator"></div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+              <div class="chat-msg ai">
+                <span class="msg-bubble">Session started. I'll keep an eye on your focus levels. You've got this. 🎯</span>
+                <span class="msg-time">09:00</span>
+              </div>
+              <div class="chat-msg user">
+                <span class="msg-bubble">Starting Chapter 4 review.</span>
+                <span class="msg-time">09:02</span>
+              </div>
+              <div class="chat-msg ai">
+                <span class="msg-bubble">Great consistency in the last 18 minutes — focus score is 84. Keep the momentum. 🔥</span>
+                <span class="msg-time">09:18</span>
+              </div>
+              <div class="chat-msg ai alert">
+                <span class="msg-bubble">⚠️ You're losing focus. GSR patterns suggest fatigue — take a 5-minute break before it spirals.</span>
+                <span class="msg-time">09:31</span>
+              </div>
+              <div class="chat-msg user">
+                <span class="msg-bubble">Okay, taking a quick break.</span>
+                <span class="msg-time">09:32</span>
+              </div>
+              <div class="chat-msg ai">
+                <span class="msg-bubble">Smart move. Back in 5. I'll have your next session block ready. 🌿</span>
+                <span class="msg-time">09:32</span>
+              </div>
+            </div>
+            <div class="chat-input-wrap">
+              <input class="chat-input" type="text" placeholder="Ask your companion anything..." readonly />
+              <button class="chat-send">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8L14 2L8 14L7 9L2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL ROOMS -->
+  <section id="social">
+    <div class="container">
+      <div class="section-tag reveal">Social Layer</div>
+      <h2 class="section-title reveal">Study alone. <span class="gradient-text">Achieve together.</span></h2>
+      <p class="section-sub reveal">Social Study Rooms bring the focus of a library and the accountability of a study group into a single digital space.</p>
+      <div class="rooms-grid">
+        <div class="room-card reveal">
+          <div class="room-header">
+            <span class="room-name">Physics Finals Grind 🔬</span>
+            <span class="room-status active">Active</span>
+          </div>
+          <div class="room-members">
+            <div class="member">
+              <div class="member-avatar" style="background: #7c3aed">D</div>
+              <div class="member-info">
+                <span class="member-name">Duru</span>
+                <div class="member-focus-bar"><div class="member-focus-fill" style="width:88%"></div></div>
+              </div>
+              <span class="member-score">88</span>
+            </div>
+            <div class="member">
+              <div class="member-avatar" style="background: #2563eb">H</div>
+              <div class="member-info">
+                <span class="member-name">Hüsna</span>
+                <div class="member-focus-bar"><div class="member-focus-fill" style="width:74%"></div></div>
+              </div>
+              <span class="member-score">74</span>
+            </div>
+            <div class="member">
+              <div class="member-avatar" style="background: #0891b2">A</div>
+              <div class="member-info">
+                <span class="member-name">Alex</span>
+                <div class="member-focus-bar"><div class="member-focus-fill" style="width:91%"></div></div>
+              </div>
+              <span class="member-score">91</span>
+            </div>
+          </div>
+          <div class="room-footer">
+            <span class="room-mode">🔇 Study Mode · Chat unlocks at break</span>
+          </div>
+        </div>
+        <div class="social-info reveal">
+          <div class="social-point">
+            <div class="sp-icon">🔇</div>
+            <div>
+              <strong>Study Mode Silence</strong>
+              <p>During focus blocks, chat is disabled. No distractions — everyone in the room is locked in.</p>
+            </div>
+          </div>
+          <div class="social-point">
+            <div class="sp-icon">💬</div>
+            <div>
+              <strong>Break Mode Chat</strong>
+              <p>When break triggers, the chat opens automatically. Share thoughts, ask questions, recharge socially.</p>
+            </div>
+          </div>
+          <div class="social-point">
+            <div class="sp-icon">📊</div>
+            <div>
+              <strong>Live Focus Visibility</strong>
+              <p>See each member's real-time focus score. Healthy peer accountability without judgment.</p>
+            </div>
+          </div>
+          <div class="social-point">
+            <div class="sp-icon">🤝</div>
+            <div>
+              <strong>Smart Partner Matching</strong>
+              <p>AI pairs you with study partners whose rhythms complement yours for maximum group productivity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOCUS GUARDIAN -->
+  <section id="guardian">
+    <div class="container">
+      <div class="section-tag reveal">Focus Guardian</div>
+      <h2 class="section-title reveal">Your digital <span class="gradient-text">sentinel.</span></h2>
+      <p class="section-sub reveal">The Focus Guardian is an AI avatar that lives in your workspace — not a static icon, but a reactive presence that mirrors your attention in real time.</p>
+      <div class="guardian-wrap">
+        <div class="guardian-display reveal">
+          <div class="guardian-stage">
+            <div class="guardian-aura" id="guardianAura"></div>
+            <div class="guardian-body" id="guardianBody">
+              <div class="guardian-face">
+                <div class="guardian-eyes">
+                  <div class="guardian-eye" id="eyeL"><div class="guardian-pupil"></div></div>
+                  <div class="guardian-eye" id="eyeR"><div class="guardian-pupil"></div></div>
+                </div>
+                <div class="guardian-mouth" id="guardianMouth"></div>
+              </div>
+              <div class="guardian-orbs">
+                <div class="guardian-orb g-orb-1"></div>
+                <div class="guardian-orb g-orb-2"></div>
+                <div class="guardian-orb g-orb-3"></div>
+              </div>
+            </div>
+            <div class="guardian-message" id="guardianMsg">
+              <span id="guardianMsgText">Monitoring your session. All clear.</span>
+            </div>
+          </div>
+          <div class="guardian-state-controls">
+            <button class="state-btn active" data-state="calm" id="stateCalm">Calm</button>
+            <button class="state-btn" data-state="focused" id="stateFocused">Focused</button>
+            <button class="state-btn" data-state="alert" id="stateAlert">Alert</button>
+          </div>
+        </div>
+        <div class="guardian-info reveal-delay">
+          <div class="guardian-mode-cards">
+            <div class="mode-card" data-mode="strict">
+              <div class="mode-icon">⚔</div>
+              <div>
+                <strong>Strict Mode</strong>
+                <p>No excuses. Direct commands. Strict Guardian holds you to your session goals with zero tolerance for distraction.</p>
+              </div>
+            </div>
+            <div class="mode-card" data-mode="friendly">
+              <div class="mode-icon">🌟</div>
+              <div>
+                <strong>Friendly Mode</strong>
+                <p>Warm encouragement and positive reinforcement. Guardian celebrates your wins and gently guides you back when you drift.</p>
+              </div>
+            </div>
+            <div class="mode-card" data-mode="coach">
+              <div class="mode-icon">📋</div>
+              <div>
+                <strong>Coach Mode</strong>
+                <p>Analytical and structured. Guardian tracks patterns, sets micro-goals, and gives you data-driven feedback after each session.</p>
+              </div>
+            </div>
+          </div>
+          <div class="guardian-states-legend">
+            <div class="legend-item calm">
+              <span class="legend-dot"></span>Calm — Focus is stable, deep work flowing
+            </div>
+            <div class="legend-item focused">
+              <span class="legend-dot"></span>Focused — Peak performance, Guardian is energized
+            </div>
+            <div class="legend-item alert">
+              <span class="legend-dot"></span>Alert — Distraction detected, intervention triggered
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="container">
+      <div class="section-tag reveal">The Team</div>
+      <h2 class="section-title reveal"><span class="gradient-text">Nextus Tech</span></h2>
+      <p class="section-sub reveal">Built by students who lived the problem — and decided to solve it.</p>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">D</div>
+          </div>
+          <h3>Duru Hacıoğlu</h3>
+          <span class="team-role">Developer</span>
+          <p>Full-stack development, firmware engineering, and AI integration. Bridges the hardware and software worlds of FocusPulse.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">H</div>
+          </div>
+          <h3>Hüsna Yatmaz</h3>
+          <span class="team-role">Research & Design</span>
+          <p>User research, cognitive science foundations, and UI/UX design. Ensures FocusPulse is grounded in evidence and built for real humans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Ready to <span class="gradient-text">focus differently?</span></h2>
+          <p>Whether you're an investor, educator, competition judge, or someone who just wants to reclaim their attention — we'd love to hear from you.</p>
+          <a href="mailto:nextustech2@gmail.com" class="contact-email">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 6L9 11L16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            nextustech2@gmail.com
+          </a>
+          <div class="contact-badges">
+            <span class="badge">🏆 Teknofest 2025</span>
+            <span class="badge">🚀 Startup Pitch Ready</span>
+            <span class="badge">📡 Hardware + AI</span>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-delay">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Tell us who you are and what you have in mind..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8L14 2L8 14L7 9L2 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <span>✓</span> Message sent. We'll be in touch soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-pulse"></span>FocusPulse
+        </a>
+        <span>by Nextus Tech</span>
+      </div>
+      <div class="footer-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#guardian">Guardian</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">© 2025 Nextus Tech · FocusPulse. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
